@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  /* position: relative; */
+
+}
+.disable-scroll{
+  overflow-y: hidden;
+}
+.heading-primary {
+  font-size: 7rem;
+  margin-bottom: 3rem;
+}
+/*  */
+.hero-section {
+  max-width: 100vw;
+  height: 90vh;
+  padding: 1rem;
+  background-color: rgba(255, 1, 1, 0.315);
+  /* If the image does'nt load, background color act as a fall back */
+  margin: 0 auto;
+  background-image: url("/images/pexels-lukas-616401\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  /* justify-items: center; */
+}
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #222;
+  cursor: pointer;
+}
+.btn:hover{
+
+color: white;
+}
+.btn-signIn {
+  background: none;
+  color: white;
+}
+.btn-signUp {
+}
+.hero-text {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 75rem;
+  align-items: center;
+  margin: 10rem auto;
+}
+.input-delivery-address {
+  font-size: 2rem;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  border: none;
+  width: 40rem;
+  padding-left: 4rem;
+}
+.sign-in-link {
+  font-size: 2rem;
+  color: white;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+.icon-location {
+  font-size: 2rem;
+  color: rgb(73, 73, 73);
+  position: relative;
+  left: 2.5rem;
+  cursor: pointer;
+}
+.icon-arrow {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgb(255, 72, 0);
+  border-radius: 50%;
+  position: relative;
+  right: 4rem;
+  cursor: pointer;
+}
+/* SERVICES SECTION */
+.Services {
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  justify-content: space-between;
+  display: flex;
+  /* gap: 3rem; */
+  /* background-color: rgb(146, 0, 75); */
+  margin-top: 6rem;
+}
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.service-img {
+  width: 50%;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.service-para {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.service-link {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 60, 0);
+  text-decoration: none;
+}
+/* FEATURE SECTION */
+.feature-section {
+  /* display: flex; */
+  color: #000;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.feature-1 {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 30% 70%;
+  place-items: center;
+  /* column-gap: 2rem; */
+  /* padding: 2rem; */
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+.feature-2 {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  place-items: center;
+  /* column-gap: 2rem; */
+  /* padding: 2rem; */
+  font-size: 2rem;
+}
+
+.feature-img {
+  width: 80%;
+}
+.f-img-1 {
+  justify-self: end;
+}
+.f-img-2 {
+  justify-self: start;
+}
+
+.feature-heading {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feature-btn {
+  font-size: 1.6rem;
+  width: 130px;
+  background-color: rgb(255, 94, 0);
+  color: white;
+}
+.feature-para {
+  font-size: 1.8rem;
+}
+.btn-retaurant {
+  width: 16rem;
+}
+/* footer */
+.footer-title {
+  margin-bottom: 2rem;
+  color: white;
+}
+.footer {
+  font-size: 1.5rem;
+  height: 90vh;
+  padding: 6rem;
+  background-color: #222;
+  color: rgb(177, 177, 177);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6rem;
+}
+.cities,
+.Cuisines,.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 200px;
+  /* border: 2px solid white; */
+  flex-wrap: wrap;
+}
+.footer-link{
+  color: rgb(177, 177, 177);
+}
+.footer-link:hover{
+  color: white;
+}
+.more-details{
+  /* border: 2px solid white; */
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+/*  */
+.app-btns{
+ justify-self: flex-end;
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+
+}
+.ios,.android{
+  background-color:rgb(56, 55, 55) ;
+  color: rgb(190, 190, 190);
+  padding: 1rem;
+  width: 16rem;
+  border-radius:6px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.ios:hover,.android:hover{
+  background-color: rgb(87, 87, 87);
+  cursor: pointer;
+  color: white;
+}
+.footer-app-btn{
+font-size: 3rem;
+}
+
+.app-btn-text-a{
+font-size: 1.2rem;
+letter-spacing: 1px;
+/* font-weight: bold; */
+}      
+.apple-text{
+font-size: 2rem;
+font-weight: bold;
+letter-spacing: -1;
+}    
+.google-text{
+  font-size: 1.8rem;
+font-weight: bold;
+}
+.app-btn-text-g{
+font-size: 0.8rem;
+}
+
+
+
+
+
+/* SIGN IN BOX */
+.cross{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(59, 59, 59);
+}
+.hidden{
+  display: none;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.sign-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  width: 40vw;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.315);
+  background-color: white; 
+  margin: 0 auto;
+  overflow-y: scroll;
+  color: #222;
+  padding: 2rem;
+  z-index: 10;
+}
+.sign-box::-webkit-scrollbar-track-piece{
+  border-radius: 20px;
+}
+.sign-box-heading{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.sign-box-btns    {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+align-items: center;
+margin-bottom: 3rem;
+} 
+/*social media buttons  */
+.sign-box-btn     {
+  font-size: 1.8rem;
+width: 80%;
+border-radius: 4rem;
+padding: 1rem;
+border: none;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}   
+/* icons */
+.google-icon{
+  width: 2rem;
+  background-color: white;
+  padding: 3px;
+  border-radius: 50%;
+}
+.facebook-icon
+,.apple-icon{
+  font-size: 2rem;
+  color: white;
+}
+.google-btn{
+  background-color:#4285f6;
+}
+ .facebook-btn {
+  background-color: rgb(59,89,152);
+ }
+.apple-btn     {
+  background-color:black ;
+}
+
+/* social medai hover */
+.google-btn:hover{
+  background-color:#264781;
+}
+ .facebook-btn:hover {
+  background-color: rgb(31, 47, 82);
+ }
+.apple-btn:hover    {
+  background-color:rgb(71, 71, 71) ;
+}
+
+
+
+
+
+#email-cont{
+  position: relative;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 2rem;
+}
+.line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.line-left{
+  height: 0.5px;
+  width: 30%;
+  background-color: #ddd;
+}
+
+/* signin black whites */
+.sign-btns{
+/* border: 2px solid black; */
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
+}
+.sign-up-box{
+background-color: #000;
+color: white;
+position: relative;
+left: 2rem;
+}
+
+.sign-in-box,.sign-up-box{
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+
+}
+.sign-in-box{
+  width: 9rem;
+  border-radius: 0 20px 20px 0;
+  padding-left: 18px;
+}
+.sign-in-box:hover{
+  background-color: rgb(206, 206, 206);
+}
+.sign-up-box:hover{
+background-color: rgb(148, 148, 148);
+}
+/* form */
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.email-text,.password-text{
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+.input-text{
+  background-color: rgb(235, 232, 232);
+  border: none;
+  height: 3rem;
+  border-radius: 5px;
+}
+.forgot-pass{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: rgb(133, 133, 133);
+}
+.forgot-pass:hover{
+  color: rgb(82, 82, 82);
+}
+.signin-orange{
+  font-size: 1.8rem;
+border: none;
+background-color: rgb(255, 72, 0);
+color: white;
+padding: 1rem;
+border-radius: 18px;
+width: 100%;
+font-weight: bold;
+}
+.signin-orange:hover{
+  background-color: rgb(201, 57, 0);
+}
